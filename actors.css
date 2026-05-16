@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+
+.header {
+  background: #333;
+  padding: 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__cta {
+  color: white;
+  background: #555;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.header__menu-burger {
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.actors__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.actors__card {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.actors__card:hover {
+  transform: translateY(-6px);
+}
+
+.actors__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.actors__name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.actors__movies {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal__content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .header {
+  background: #000;
+}
+
+.dark .actors__card {
+  background: #1c1c1c;
+  color: white;
+}

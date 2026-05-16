@@ -1,0 +1,23 @@
+.film__wrapper{
+display:flex;
+gap:40px;
+margin-top:40px;
+}
+
+.film__poster{
+width:300px;
+}
+
+.film__title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.film__data{
+margin:5px 0;
+}
+
+.film__description{
+margin-top:20px;
+line-height:1.5;
+}

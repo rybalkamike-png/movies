@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actors</title>
+
+<meta name="description" content="Платформа с фильмами, актёрами и рейтингами">
+<meta name="keywords" content="фильмы, кино, актёры, топ 250, movies">
+<meta name="author" content="Movie Platform">
+<meta name="theme-color" content="#333">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="pngegg.png">
+
+<link rel="stylesheet" href="actors.css">
+</head>
+
+<body>
+
+
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+
+      <a class="header__logo" href="index.html">
+        <img src="pngegg.png" alt="logo" class="logo">
+      </a>
+
+    
+      <a class="header__menu-link" href="index.html">Главная</a>
+      <a class="header__menu-link" href="actors.html">Актёры</a>
+
+      <div class="header__menu-burger">☰</div>
+
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="index.html">Фильмы</a>
+          </li>
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="actors.html">Актёры</a>
+          </li>
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Топ-250</a>
+          </li>
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">О платформе</a>
+          </li>
+
+        </ul>
+      </nav>
+
+  
+      <button id="themeBtn">🌙</button>
+
+      <a class="header__cta" href="#">Подписаться</a>
+
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+
+<section class="actors">
+  <div class="container">
+
+    <h2 class="actors__title">Актёры</h2>
+
+    <div class="actors__cards"></div>
+
+  </div>
+</section>
+
+</main>
+
+
+<div class="modal">
+  <div class="modal__content"></div>
+</div>
+
+<script src="actors.js"></script>
+
+</body>
+</html>

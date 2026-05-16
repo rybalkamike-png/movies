@@ -1,0 +1,215 @@
+.header {
+  background: #333;
+  padding: 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__cta {
+  color: white;
+  text-decoration: none;
+  background: #555;
+  padding: 6px 12px;
+}
+
+.header__menu-burger {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.movies__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movies__card {
+  width: 200px;
+}
+
+.movies__card-img {
+  width: 100%;
+}
+
+.film__wrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.film__poster {
+  width: 300px;
+}
+
+.film__title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.film__data {
+  margin: 5px 0;
+}
+
+.film__description {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .header {
+  background: #000;
+}
+
+.dark .movies__card,
+.dark .film__card {
+  background: #1c1c1c;
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 60px;
+  border-top: 2px solid rgba(255,255,255,0.05);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.footer__logo-img {
+  width: 60px;
+  transition: 0.3s;
+}
+
+.footer__logo-img:hover {
+  transform: scale(1.05);
+}
+
+
+.footer__menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.footer__menu-link {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__menu-link:hover {
+  color: #fff;
+}
+
+
+.footer__contacts {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer__contacts-item {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__contacts-item:hover {
+  color: #fff;
+}
+
+
+.footer__contacts-pol {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer__contacts-pol:hover {
+  color: #aaa;
+}
+
+
+.footer p {
+  color: #777;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+@media (max-width: 768px) {
+
+  .header__wrapper {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header__menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movies__cards,
+  .actors__cards {
+    justify-content: center;
+  }
+
+  .movies__card,
+  .actors__card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .film__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .film__poster {
+    width: 90%;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Movie Platform</title>
+
+  <meta name="description" content="Платформа с фильмами, актёрами и рейтингами">
+  <meta name="keywords" content="фильмы, кино, актёры, топ 250, movies">
+  <meta name="author" content="Movie Platform">
+  <meta name="theme-color" content="#333">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="pngegg.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+
+        <a class="header__logo" href="index.html">
+          <img class="logo" src="pngegg.png" alt="logo">
+        </a>
+
+        <a class="header__menu-link" href="index.html">Главная</a>
+        <a class="header__menu-link" href="actors.html">Актёры</a>
+
+        <div class="header__menu-burger">☰</div>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#about">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#subscribe">Подписаться</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Фильмы</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Топ-250</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="themeBtn">🌙</button>
+
+        <a class="header__cta" href="#">Подписаться</a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Лучшие фильмы</h1>
+        <p class="hero__text">Список ТОП-250 фильмов</p>
+      </div>
+    </section>
+
+    <section class="movies">
+      <div class="container">
+
+        <h2 class="movies__title title">ТОП-250 фильмов</h2>
+
+        <div class="movies__cards" id="movies"></div>
+
+        <div class="movies__pagination">
+          <button class="movies__btn prev">Назад</button>
+          <span class="movies__page">1</span>
+          <button class="movies__btn next">Вперёд</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title title" id="about">О нас</h2>
+        <p class="about__text">
+          Платформа с рейтингом лучших фильмов мира.
+        </p>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="form__title title" id="subscribe">Подписка</h2>
+        <form class="form">
+          <input class="subscribe__form-input" type="text" placeholder="Имя">
+          <input class="subscribe__form-input" type="email" placeholder="Email">
+          <button class="subscribe__form-btn">Подписаться</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+ 
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-img" src="Movie.svg" alt="footer-logo">
+      </a>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Фильмы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#about">О платформе</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#subscribe">Подписка</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <a class="footer__contacts-item" href="#">Телефон</a>
+        <a class="footer__contacts-item" href="#">Эл. почта</a>
+        <a class="footer__contacts-item" href="#">Соц. сети</a>
+      </div>
+
+      <a class="footer__contacts-pol" href="#">Политика конфиденциальности</a>
+
+      <p>© 2026 Movie Platform</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
